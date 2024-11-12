@@ -1,7 +1,5 @@
 import { redirect } from "next/navigation";
 
-
-export default function StructurePage() {
+export default function ProductPage() {
   redirect('/home');
 }
-

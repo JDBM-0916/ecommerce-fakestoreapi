@@ -1,0 +1,132 @@
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1600px;
+  margin: 2.5rem auto;
+  padding: 1.5rem;
+  border-radius: 30px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  color: #3bceac;
+  position: relative;
+}
+
+.pokemon-card h1,
+.pokemon-card h2,
+.pokemon-card h3 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.pokemon-card .pokemon-name {
+  font-size: 1.875rem;
+  font-weight: 800;
+  text-transform: capitalize;
+  text-align: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #25d366;
+}
+
+.pokemon-card .pokemon-image {
+  width: 130px;
+  height: 130px;
+  margin-bottom: 1.25rem;
+  transition: transform 300ms;
+}
+
+.pokemon-card .pokemon-image:hover {
+  transform: scale(1.1);
+}
+
+.pokemon-card .pokemon-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.pokemon-card .pokemon-info > div {
+  background-color: #ffffff13;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 300ms;
+}
+
+.pokemon-card .pokemon-info > div:hover {
+  box-shadow: 0 4px 8px rgba(42, 44, 44, 0.705);
+}
+
+.pokemon-card .moves {
+  grid-column: span 3;
+}
+
+.pokemon-card .moves-list,
+.pokemon-card .types-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.pokemon-card .moves-list span,
+.pokemon-card .types-list span {
+  margin: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.pokemon-card .moves-list span {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.pokemon-card .types-list span {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.pokemon-card .sprites-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pokemon-card .normal-sprites,
+.pokemon-card .shiny-sprites {
+  text-align: center;
+}
+
+.pokemon-card .normal-sprites p,
+.pokemon-card .shiny-sprites p {
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.pokemon-card .normal-sprites img,
+.pokemon-card .shiny-sprites img {
+  width: 80px;
+  height: 80px;
+}
+
+.pokemon-card .stats ul,
+.pokemon-card .abilities ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pokemon-card .stats li,
+.pokemon-card .abilities li,
+.pokemon-card .physical p {
+  margin-bottom: 0.5rem;
+}
+
+.pokemon-card .sprites {
+  grid-column: span 3;
+}
